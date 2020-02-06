@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_key2"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="keyword"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_search2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="9dp"
+        android:text="검색" />
+
+    <RadioGroup
+        android:id="@+id/rb_group"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/et_key2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="112dp">
+
+        <RadioButton
+            android:id="@+id/rb_cine2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="영화" />
+
+        <RadioButton
+            android:id="@+id/rb_book2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="책" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="91dp" />
+</RelativeLayout>

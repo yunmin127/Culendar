@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+<LinearLayout android:orientation="horizontal" android:layout_height="40dp" android:layout_width="fill_parent" android:gravity="center_vertical">
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="center" android:textColor="#FF0000" android:text="일" android:layout_weight="1"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="center" android:text="월" android:layout_weight="1"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="center" android:text="화" android:layout_weight="1"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="center" android:text="수" android:layout_weight="1"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="center" android:text="목" android:layout_weight="1"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="center" android:text="금" android:layout_weight="1"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="center" android:textColor="#0100FF" android:text="토" android:layout_weight="1"/>
+</LinearLayout>
+
+    <GridView
+        android:id="@+id/calGrid"
+        android:layout_width="match_parent"
+        android:layout_height="468dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="27dp"
+        android:numColumns="7" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="66dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="+" />
+</RelativeLayout>

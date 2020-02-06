@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MA02_20151019</string>
+    <string name="api_url">https://openapi.naver.com/v1/search/book.xml?display=50&amp;start=1&amp;query=</string>
+    <string name="api_url2">https://openapi.naver.com/v1/search/movie.xml?display=50&amp;start=1&amp;query=</string>
+    <string name="client_id">oHIJUedKcwxtxsAvic3i</string>
+    <string name="client_secret">ai4newAuaF</string>
+    <string name="my_image_path">/my_images</string>
+    <string name="tmp_image_path">/tmp_images</string>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_key"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="keyword"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignTop="@+id/et_key"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="121dp">
+
+        <RadioButton
+            android:id="@+id/rb_cine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioClick"
+            android:text="영화" />
+
+        <RadioButton
+            android:id="@+id/rb_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioClick"
+            android:text="책" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="25dp"
+        android:text="검색" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="119dp"
+        android:layout_height="138dp"
+        android:layout_alignStart="@+id/et_key"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="78dp"
+        app:srcCompat="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="82dp"
+        android:layout_height="32dp"
+        android:layout_alignStart="@+id/tv_author"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginTop="2dp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="123dp" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_title"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="189dp"
+        android:text="TextView" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_key"
+        android:layout_centerVertical="true" />
+
+    <EditText
+        android:id="@+id/et_line"
+        android:layout_width="338dp"
+        android:layout_height="57dp"
+        android:layout_alignStart="@+id/et_key"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="152dp"
+        android:ems="10"
+        android:hint="한줄평"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_key"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:text="취소" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_search"
+        android:layout_alignBottom="@+id/button2"
+        android:text="추가" />
+</RelativeLayout>
